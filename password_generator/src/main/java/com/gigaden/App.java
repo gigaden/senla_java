@@ -1,13 +1,15 @@
 package com.gigaden;
 
+import com.gigaden.service.PasswordGenerator;
+
 /**
- * Hello world!
- *
- */
-public class App 
+ * Решил использовать StringBuilder, хотя говорят, что сейчас стринг достаточно оптимизирован уже
+ * **/
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        PasswordGenerator generator = new PasswordGenerator();
+        generator.start();
     }
 }
